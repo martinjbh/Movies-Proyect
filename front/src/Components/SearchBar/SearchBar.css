@@ -1,0 +1,47 @@
+.SearchBar-contenedor {
+  width: 300px;
+}
+
+.SearchBar-contenedor input {
+  border-radius: 6px;
+  border-width: 1px;
+  margin-right: 20px;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+.nav-contenedor-button-Search {
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+  font-size: medium;
+  height: 24px;
+  width: 80px;
+  border-radius: 8px;
+  color: #dce1e6;
+  -webkit-box-shadow: 1px 1px 1px 1px #161515;
+          box-shadow: 1px 1px 1px 1px #161515;
+}
+
+.nav-contenedor-button-Search:hover {
+  height: 24px;
+  width: 80px;
+}
+
+.SearchBar-contenedor-lupa {
+  padding: 2px;
+  position: absolute;
+  background-color: rgba(240, 248, 255, 0.698);
+  border-radius: 15px;
+  top: 1px;
+  right: 320px;
+  width: 20px;
+  height: 20px;
+}
+
+.SearchBar-contenedor-lupa:hover {
+  width: 24px;
+  height: 24px;
+}
+/*# sourceMappingURL=SearchBar.css.map */

@@ -1,0 +1,30 @@
+.detalleMovie-contenedor {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.detalleMovie-contenedor img {
+  margin-left: 5%;
+}
+
+.detalleMovie-contenedor div {
+  margin-left: 5%;
+}
+
+.detalleMovie-contenedor p {
+  color: rgba(255, 255, 255, 0.816);
+}
+
+.detalleMovie-contenedor-back {
+  background-color: rgba(152, 160, 168, 0.453);
+  padding: 2%;
+  border-radius: 2em;
+}
+/*# sourceMappingURL=DetalleMovie.css.map */

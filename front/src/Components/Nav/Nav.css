@@ -1,0 +1,46 @@
+.nav-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: 9cm;
+  height: 60px;
+  border-radius: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.nav-contenedor-botones {
+  position: absolute;
+  left: 100px;
+}
+
+.nav-contenedor-logo {
+  width: 40px;
+  margin-left: 3%;
+}
+
+.nav-contenedor-button-favoritas {
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: medium;
+  margin-left: 50px;
+  height: 24px;
+  width: 80px;
+  border-radius: 8px;
+  color: #dce1e6;
+}
+
+.nav-contenedor-button-favoritas:hover {
+  color: rgba(212, 154, 39, 0.505);
+}
+
+.searchBar {
+  position: absolute;
+  right: 8%;
+}
+/*# sourceMappingURL=Nav.css.map */

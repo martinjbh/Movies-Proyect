@@ -1,0 +1,38 @@
+.movie-container {
+    height: 190px;
+    width: 120px;
+    padding: 10px;
+
+   
+}
+
+.movie-container-externo {
+    margin: 1%;
+}
+.poster {
+    height: 180px;
+    width: 115px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.poster:hover {
+    height: 230px;
+    width: 160px;
+}
+
+.yellow-star {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top:40px;
+    left:15px;
+    z-index: 2;
+    cursor: pointer;
+   
+}
+
+.yellow-star:hover{
+    background-color: rgb(152, 219, 29);
+    border-radius: 2em;
+}
