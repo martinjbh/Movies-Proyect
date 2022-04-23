@@ -21,14 +21,17 @@ const Movie = (props) => {
             setStar(true)
         }
     }
+    const log=()=>{
+        console.log("entrando")
+    }
     return (
-        <div className='movie-container-externo'>
+        <div   className='movie-container-externo'>
             {props.movie &&
                 <div className='movie-container'>
                     {star || <img onClick={enviar} className="yellow-star" src={blackstar}></img>}
                     {star && <img onClick={enviar} className="yellow-star" src={yellowStar}></img>}
                     <Link key={props.movie.id} to={`/detalle/${props.movie.imdbID}`}>
-                        <img className="poster" src={props.movie.Poster}></img>
+                        <img className="posterHome" src={props.movie.Poster}></img>
                     </Link>
                 </div>
             }

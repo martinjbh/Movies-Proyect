@@ -26,19 +26,28 @@ const Nav = (props) => {
     }
     return (
         <div className='nav-contenedor'>
-            <img className='nav-contenedor-logo' src={logo}></img>
-            <div className='nav-contenedor-botones'>
+            <div className='nav-contenedor-ambos'>
                 <NavLink className="nav-contenedor-button-favoritas" to={`/`}>
                     Home
                 </NavLink>
                 <NavLink className="nav-contenedor-button-favoritas navlink" to={`/favoritas`}>
                     Favoritas
                 </NavLink>
-
             </div>
+            <div class="searchBar">
+                <SearchBar />
+            </div>
+{/*             
+            <div class="account-dropdown-button user">
+                <a href="/YourAccount" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-label="Mio martin! - Cuenta y configuración">
+                    <span class="profile-link" role="presentation">
+                        <img class="profile-icon" src="https://occ-0-5376-1740.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABayVgGi3dnRy8BN94ufkzx0MjtGC9FogPXt-VFwcOP9T_7A6VycGIBOoQuo-djQ597ltTv_WRm4ycC6ec_nOvP8.png?r=c13" alt="" />
+                    </span>
+                </a>
+                <span class="caret" role="presentation">
+                </span>
+            </div> */}
 
-
-            <SearchBar classe="searchBar" />
         </div>
     )
 }

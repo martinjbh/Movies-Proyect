@@ -2,15 +2,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-position: 9cm;
   height: 60px;
-  border-radius: 17px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0px;
+  background-color: #141414;
+  z-index: 3;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav-contenedor-botones {
@@ -21,6 +27,10 @@
 .nav-contenedor-logo {
   width: 40px;
   margin-left: 3%;
+}
+
+.searchBar {
+  margin-right: 5%;
 }
 
 .nav-contenedor-button-favoritas {
@@ -39,8 +49,24 @@
   color: rgba(212, 154, 39, 0.505);
 }
 
-.searchBar {
-  position: absolute;
-  right: 8%;
+.user {
+  margin-left: 6%;
+}
+
+@media (max-width: 420px) {
+  .searchBar {
+    position: relative;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin-top: 6%;
+  }
+  .nav-contenedor-ambos {
+    position: relative;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin-top: 5%;
+  }
 }
 /*# sourceMappingURL=Nav.css.map */

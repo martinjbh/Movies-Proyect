@@ -1,24 +1,29 @@
-.nav-contenedor{
-display: flex;
-background-position: 9cm;
-// background-image: url("https://p4.wallpaperbetter.com/wallpaper/325/140/18/alone-stars-purple-background-hd-wallpaper-preview.jpg");
-// background-color: rgba(54, 142, 219, 0.448);
-height: 60px;
-border-radius: 17px;
-align-items: center;
-width: 100%;
-position: fixed;
-top:0px
+.nav-contenedor {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+ 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    z-index: 3;
+    flex-wrap: wrap;
 }
-.nav-contenedor-botones{
+.nav-contenedor-botones {
     position: absolute;
     left: 100px;
 }
-.nav-contenedor-logo{
+
+.nav-contenedor-logo {
     width: 40px;
     margin-left: 3%;
 }
-.nav-contenedor-button-favoritas{
+.searchBar {
+    margin-right: 5%;
+}
+.nav-contenedor-button-favoritas {
     padding: 3px;
     text-align: center;
     text-decoration: none;
@@ -27,12 +32,28 @@ top:0px
     height: 24px;
     width: 80px;
     border-radius: 8px;
-    color: rgb(220, 225, 230); 
+    color: rgb(220, 225, 230);
 }
-.nav-contenedor-button-favoritas:hover{
+.nav-contenedor-button-favoritas:hover {
     color: rgba(212, 154, 39, 0.505);
 }
-.searchBar{
-position: absolute;
-right: 8%;
+.user{
+  
+   margin-left: 6%;
 }
+@media (max-width: 420px) {
+    .searchBar {
+     position: relative;
+     left: 45%;
+     transform: translate(-50%, -50%);
+   
+     margin-top:6%
+    }
+    .nav-contenedor-ambos{
+        position: relative;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        margin-top:5%
+ 
+    }
+  }

@@ -9,23 +9,33 @@ import lupa from './lupa.png'
 
 const SearchBar = ({ classe, getMoviesBusqueda, state }) => {
     const [titulo, setTitulo] = useState("")
+    const [mostrarInput, setMostrarInput] = useState(false)
     let navigate = useNavigate();
 
     const handleInputChange = (e) => {
         setTitulo(e.target.value)
     }
-    
+
     const handleSubmit = (e) => {
+        setMostrarInput(!mostrarInput)
         navigate("/buscadas");
         e.preventDefault()
         getMoviesBusqueda(titulo)
         document.getElementById("inpt2").value = ""
     }
     return (
-        <div className={`SearchBar-contenedor ${classe}`}>
+        <div >
             <form onSubmit={handleSubmit}>
-                <NavLink to='/' onClick={handleSubmit}><img className="SearchBar-contenedor-lupa" src={lupa}></img></NavLink>
-                <input id='inpt2' onChange={handleInputChange} name="nombre" placeholder='Escriba su Pelicula...'></input>
+                <div className={`SearchBar-contenedor ${classe}`}>
+                    <div className="SearchBar-contenedor-lupa">
+                        <NavLink to='/' onClick={handleSubmit}>
+                            <img className="lupa" src={lupa}></img>
+                        </NavLink>
+                    </div>
+                    <div>
+                        <input type="search" onChange={handleInputChange} class="form-control form-control-dark" placeholder="Search..." aria-label="Search"></input>
+                    </div>
+                </div>
             </form>
         </div>
     )
