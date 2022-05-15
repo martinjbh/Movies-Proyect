@@ -1,10 +1,17 @@
 .detalleMovie-contenedor {
     margin-top: 10%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
+button{
+    background-color: aliceblue;
+    border-radius: 9px;
+    padding: 6%;
+    font-weight: 600;
+    cursor:pointer;
 
+}
     img {
         margin-left: 5%;
     }
@@ -18,7 +25,12 @@
     }
 }
 .detalleMovie-contenedor-back{
-    background-color: rgba(152, 160, 168, 0.453);
+    background-color: rgba(152, 160, 168, 0.066);
     padding: 2%;
-    border-radius: 2em;
+}
+@media( min-width:  768px ){
+    .detalleMovie-contenedor-back{
+        background-color: rgba(152, 160, 168, 0.066);
+        padding: 2%;
+    }
 }

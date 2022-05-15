@@ -19,7 +19,11 @@ const DetalleMovie = (props) => {
                                 <p>{e.Title}</p>
                                 <p>{`Type:  ${e.Type}`}</p>
                                 <p>{`Year:  ${e.Year}`}</p>
+                                <button >Reproducir</button>
                             </div>
+                            
+                           
+
 
                         </div>
                     )

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACf,UAAU,EAAE,GAAG;EACf,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,KAAK;CACZ",
-    "sources": [
-        "CarteletaFavourite.scss"
-    ],
-    "names": [],
-    "file": "CarteletaFavourite.css"
-}
